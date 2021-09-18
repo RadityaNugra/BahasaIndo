@@ -35,9 +35,9 @@
 
 <body>
   <!-- preloader start -->
-  <div class="preloader">
+  {{-- <div class="preloader">
     <img src="{{ asset('/themes/educenter/images/preloader.gif')}}" alt="preloader">
-  </div>
+  </div> --}}
   <!-- preloader end -->
 
 <!-- header -->
@@ -47,7 +47,7 @@
     <div class="container">
       <div class="row no-gutters">
         <div class="col-lg-4 text-center text-lg-left">
-          <a class="text-color mr-3" href="callto:+443003030266"><strong>CALL</strong> +44 300 303 0266</a>
+          <a class="text-color mr-3" href="callto:+443003030266"><strong>CALL</strong> +62 898997</a>
           <ul class="list-inline d-inline">
             <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-facebook"></i></a></li>
             <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
@@ -83,11 +83,11 @@
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item @@about">
-              <a class="nav-link" href="about.html">About</a>
+              <a class="nav-link" href="about.html">News</a>
             </li>
-            <li class="nav-item @@courses">
+            {{-- <li class="nav-item @@courses">
               <a class="nav-link" href="courses.html">COURSES</a>
-            </li>
+            </li> --}}
             <li class="nav-item @@events">
               <a class="nav-link" href="events.html">EVENTS</a>
             </li>
@@ -234,11 +234,11 @@
 <!-- /hero slider -->
 
 <!-- banner-feature -->
-<section class="bg-gray overflow-md-hidden">
+{{-- <section class="bg-gray overflow-md-hidden">
   <div class="container-fluid p-0">
     <div class="row no-gutters">
       <div class="col-xl-4 col-lg-5 align-self-end">
-        <img class="img-fluid w-100" src="images/banner/banner-feature.png" alt="banner-feature">
+        <img class="img-fluid w-100" style="margin-top:-100px;" src="https://asset.kompas.com/data/photo/2021/02/18/602e45d79c327.jpg" alt="banner-feature">
       </div>
       <div class="col-xl-8 col-lg-7">
         <div class="row feature-blocks bg-gray justify-content-between">
@@ -270,7 +270,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> --}}
 <!-- /banner-feature -->
 
 <!-- about us -->
@@ -278,157 +278,31 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-6 order-2 order-md-1">
-        <h2 class="section-title">About Educenter</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat </p>
-        <p>cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
-        <a href="about.html" class="btn btn-primary-outline">Learn more</a>
+        <h3 class="section-title">Salah,Vaksin nusantara mampu hancurkan semua jenis virus Corona dengan Efikasi 100%</h3>
+        <p>
+          Tangkapan layar pesan berantai di aplikasi WhatsApp berisi klaim bahwa vaksin Nusantara ampuh 100 persen hancurkan semua jenis virus Corona, beredar di Facebook, pada 6 September 2021. 
+        </p>
+        <p>
+          Dalam tangkapan layar itu, pesan yang tertulis, memuat informasi yang diklaim berasal dari mantan Menkes Siti Fadilah Supari dengan isi: “Vaksin Nusantara dengan teknologi dendritik diklaim ampuh 100 persen hancurkan semua jenis virus Corona (alpha, beta, delta, delta plus, lambda & jenis virus lainnya).
+        </p>
+        <p>
+          Isi pesan berikutnya memuat klaim bahwa tingkat efikasi dan efektivitas sebesar 100 persen, serta diklaim aman bagi yang memiliki penyakit penyerta (komorbid), anak dan ibu hamil. 
+        </p>
+        {{-- <a href="about.html" class="btn btn-primary-outline">Learn more</a> --}}
       </div>
       <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
-        <img class="img-fluid w-100" src="images/about/about-us.jpg" alt="about image">
+        <img class="img-fluid w-100" src="https://cdn.tmpo.co/data/2021/09/13/id_1050561/1050561_720.jpg" alt="about image">
       </div>
     </div>
   </div>
 </section>
 <!-- /about us -->
 
-<!-- courses -->
-<section class="section-sm">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="d-flex align-items-center section-title justify-content-between">
-          <h2 class="mb-0 text-nowrap mr-3">Our Course</h2>
-          <div class="border-top w-100 border-primary d-none d-sm-block"></div>
-          <div>
-            <a href="courses.html" class="btn btn-sm btn-primary-outline ml-sm-3 d-none d-sm-block">see all</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- course list -->
-<div class="row justify-content-center">
-  <!-- course item -->
-  <div class="col-lg-4 col-sm-6 mb-5">
-    <div class="card p-0 border-primary rounded-0 hover-shadow">
-      <img class="card-img-top rounded-0" src="images/courses/course-1.jpg" alt="course thumb">
-      <div class="card-body">
-        <ul class="list-inline mb-2">
-          <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
-          <li class="list-inline-item"><a class="text-color" href="#">Humanities</a></li>
-        </ul>
-        <a href="course-single.html">
-          <h4 class="card-title">Photography</h4>
-        </a>
-        <p class="card-text mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna.</p>
-        <a href="course-single.html" class="btn btn-primary btn-sm">Apply now</a>
-      </div>
-    </div>
-  </div>
-  <!-- course item -->
-  <div class="col-lg-4 col-sm-6 mb-5">
-    <div class="card p-0 border-primary rounded-0 hover-shadow">
-      <img class="card-img-top rounded-0" src="images/courses/course-2.jpg" alt="course thumb">
-      <div class="card-body">
-        <ul class="list-inline mb-2">
-          <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
-          <li class="list-inline-item"><a class="text-color" href="#">Humanities</a></li>
-        </ul>
-        <a href="course-single.html">
-          <h4 class="card-title">Programming</h4>
-        </a>
-        <p class="card-text mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna.</p>
-        <a href="course-single.html" class="btn btn-primary btn-sm">Apply now</a>
-      </div>
-    </div>
-  </div>
-  <!-- course item -->
-  <div class="col-lg-4 col-sm-6 mb-5">
-    <div class="card p-0 border-primary rounded-0 hover-shadow">
-      <img class="card-img-top rounded-0" src="images/courses/course-3.jpg" alt="course thumb">
-      <div class="card-body">
-        <ul class="list-inline mb-2">
-          <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
-          <li class="list-inline-item"><a class="text-color" href="#">Humanities</a></li>
-        </ul>
-        <a href="course-single.html">
-          <h4 class="card-title">Lifestyle Archives</h4>
-        </a>
-        <p class="card-text mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna.</p>
-        <a href="course-single.html" class="btn btn-primary btn-sm">Apply now</a>
-      </div>
-    </div>
-  </div>
-  <!-- course item -->
-  <div class="col-lg-4 col-sm-6 mb-5">
-    <div class="card p-0 border-primary rounded-0 hover-shadow">
-      <img class="card-img-top rounded-0" src="images/courses/course-4.jpg" alt="course thumb">
-      <div class="card-body">
-        <ul class="list-inline mb-2">
-          <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
-          <li class="list-inline-item"><a class="text-color" href="#">Humanities</a></li>
-        </ul>
-        <a href="course-single.html">
-          <h4 class="card-title">Complete Freelancing</h4>
-        </a>
-        <p class="card-text mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna.</p>
-        <a href="course-single.html" class="btn btn-primary btn-sm">Apply now</a>
-      </div>
-    </div>
-  </div>
-  <!-- course item -->
-  <div class="col-lg-4 col-sm-6 mb-5">
-    <div class="card p-0 border-primary rounded-0 hover-shadow">
-      <img class="card-img-top rounded-0" src="images/courses/course-5.jpg" alt="course thumb">
-      <div class="card-body">
-        <ul class="list-inline mb-2">
-          <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
-          <li class="list-inline-item"><a class="text-color" href="#">Humanities</a></li>
-        </ul>
-        <a href="course-single.html">
-          <h4 class="card-title">Branding Design</h4>
-        </a>
-        <p class="card-text mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna.</p>
-        <a href="course-single.html" class="btn btn-primary btn-sm">Apply now</a>
-      </div>
-    </div>
-  </div>
-  <!-- course item -->
-  <div class="col-lg-4 col-sm-6 mb-5">
-    <div class="card p-0 border-primary rounded-0 hover-shadow">
-      <img class="card-img-top rounded-0" src="images/courses/course-6.jpg" alt="course thumb">
-      <div class="card-body">
-        <ul class="list-inline mb-2">
-          <li class="list-inline-item"><i class="ti-calendar mr-1 text-color"></i>02-14-2018</li>
-          <li class="list-inline-item"><a class="text-color" href="#">Humanities</a></li>
-        </ul>
-        <a href="course-single.html">
-          <h4 class="card-title">Art Design</h4>
-        </a>
-        <p class="card-text mb-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna.</p>
-        <a href="course-single.html" class="btn btn-primary btn-sm">Apply now</a>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- /course list -->
-    <!-- mobile see all button -->
-    <div class="row">
-      <div class="col-12 text-center">
-        <a href="courses.html" class="btn btn-sm btn-primary-outline d-sm-none d-inline-block">sell all</a>
-      </div>
-    </div>
-  </div>
-</section>
+
 <!-- /courses -->
 
 <!-- cta -->
-<section class="section bg-primary">
+{{-- <section class="section bg-primary">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
@@ -438,23 +312,28 @@
       </div>
     </div>
   </div>
-</section>
+</section> --}}
 <!-- /cta -->
 
 <!-- success story -->
-<section class="section bg-cover" data-background="images/backgrounds/success-story.jpg">
+<section class="section bg-primary" data-background="images/backgrounds/success-story.jpg">
   <div class="container">
     <div class="row">
-      <div class="col-lg-6 col-sm-4 position-relative success-video">
-        <a class="play-btn venobox" href="https://youtu.be/nA1Aqp0sPQo" data-vbtype="video">
-          <i class="ti-control-play"></i>
-        </a>
+      <div class="col-lg-6 col-sm-4  success-video">
+        <img class="img-fluid " style="height: 450px;width:1000px;" src="https://disk.mediaindonesia.com/thumbs/1800x1200/news/2021/02/d2d552aef0aa67c104ae96d41b3d8efa.jpg" alt="about image">
       </div>
       <div class="col-lg-6 col-sm-8">
         <div class="bg-white p-5">
-          <h2 class="section-title">Success Stories</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+          <h3 class="section-title">Pemeriksaan Fakta</h3>
+          <p>Hasil verifikasi Tempo kepada sejumlah ahli, menunjukkan, bahwa klaim tersebut tidak memiliki basis ilmiah sesuai prosedur pembuatan vaksin. </p>
+          <p>
+            Menurut ahli Biologi Molekuler Ahmad Utomo, vaksin Nusantara belum melakukan uji klinis tahap 3. Sehingga klaim bahwa vaksin Nusantara dapat ampuh hancurkan semua jenis virus Corona dengan efikasi dan efektivitas 100 persen tidak memiliki rujukan data ilmiah. 
+          </p>
+          <p>
+            “Itu omong kosong karena sama sekali tidak ada bukti uji klinis tahap 3,” kata dia kepada Tempo, Senin 13 September 2021.
+            Ketua Komisi Nasional Kejadian Ikutan Pasca Imunisasi (Komnas KIPI) Prof Hindra Irawan Satari, juga menjelaskan bahwa uji klinis vaksin Nusantara hanya pada tahap 1 yang hanya menjangkau puluhan orang. Vaksin tersebut belum sampai pada uji klinis fase 2 yang melibatkan seratus orang dan fase 3 terhadap ribuan orang.
+
+          </p>
         </div>
       </div>
     </div>
@@ -465,139 +344,35 @@
 <!-- events -->
 <section class="section bg-gray">
   <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="d-flex align-items-center section-title justify-content-between">
-          <h2 class="mb-0 text-nowrap mr-3">Upcoming Events</h2>
-          <div class="border-top w-100 border-primary d-none d-sm-block"></div>
-          <div>
-            <a href="events.html" class="btn btn-sm btn-primary-outline ml-sm-3 d-none d-sm-block">see all</a>
-          </div>
-        </div>
+    <div class="row align-items-center">
+      <div class="col-md-6 order-2 order-md-1">
+        <h3 class="section-title">Kesimpulan</h3>
+        <p>
+          Dari pemeriksaan fakta di atas, klaim bahwa vaksin Nusantara ampuh hancurkan semua jenis virus Corona dengan efektivitas dan efikasi 100 persen adalah keliru. Vaksin Nusantara belum menjalani uji klinis tahap 3 yang dilakukan terhadap ribuan orang untuk mengetahui tingkat keamanan dan efikasi. 
+        </p>
+        <p>
+          Sel dendritik yang menjadi basis vaksin Nusantara bersifat autologus artinya dari materi yang digunakan dari diri kita sendiri dan untuk diri kita sendiri, sehingga tidak bisa digunakan untuk orang lain.
+        </p>
+        {{-- <a href="about.html" class="btn btn-primary-outline">Learn more</a> --}}
       </div>
-    </div>
-    <div class="row justify-content-center">
-  <!-- event -->
-  <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-    <div class="card border-0 rounded-0 hover-shadow">
-      <div class="card-img position-relative">
-        <img class="card-img-top rounded-0" src="images/events/event-1.jpg" alt="event thumb">
-        <div class="card-date"><span>18</span><br>December</div>
-      </div>
-      <div class="card-body">
-        <!-- location -->
-        <p><i class="ti-location-pin text-primary mr-2"></i>Dhanmondi Lake, Dhaka</p>
-        <a href="event-single.html"><h4 class="card-title">Lorem ipsum dolor amet, consectetur adipisicing.</h4></a>
-      </div>
-    </div>
-  </div>
-  <!-- event -->
-  <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-    <div class="card border-0 rounded-0 hover-shadow">
-      <div class="card-img position-relative">
-        <img class="card-img-top rounded-0" src="images/events/event-2.jpg" alt="event thumb">
-        <div class="card-date"><span>21</span><br>December</div>
-      </div>
-      <div class="card-body">
-        <!-- location -->
-        <p><i class="ti-location-pin text-primary mr-2"></i>Dhanmondi Lake, Dhaka</p>
-        <a href="event-single.html"><h4 class="card-title">Lorem ipsum dolor amet, consectetur adipisicing.</h4></a>
-      </div>
-    </div>
-  </div>
-  <!-- event -->
-  <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-    <div class="card border-0 rounded-0 hover-shadow">
-      <div class="card-img position-relative">
-        <img class="card-img-top rounded-0" src="images/events/event-3.jpg" alt="event thumb">
-        <div class="card-date"><span>23</span><br>December</div>
-      </div>
-      <div class="card-body">
-        <!-- location -->
-        <p><i class="ti-location-pin text-primary mr-2"></i>Dhanmondi Lake, Dhaka</p>
-        <a href="event-single.html"><h4 class="card-title">Lorem ipsum dolor amet, consectetur adipisicing.</h4></a>
+      <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
+        <img class="img-fluid w-100" src="https://www.lensaindonesia.com/wp-content/uploads/2021/08/vaksin-nusantara.jpg" alt="about image">
       </div>
     </div>
   </div>
 </div>
     <!-- mobile see all button -->
-    <div class="row">
-      <div class="col-12 text-center">
-        <a href="course.html" class="btn btn-sm btn-primary-outline d-sm-none d-inline-block">sell all</a>
-      </div>
-    </div>
+    
   </div>
 </section>
 <!-- /events -->
 
 <!-- teachers -->
-<section class="section">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-12">
-        <h2 class="section-title">Our Teachers</h2>
-      </div>
-      <!-- teacher -->
-      <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-        <div class="card border-0 rounded-0 hover-shadow">
-          <img class="card-img-top rounded-0" src="images/teachers/teacher-1.jpg" alt="teacher">
-          <div class="card-body">
-            <a href="teacher-single.html">
-              <h4 class="card-title">Jacke Masito</h4>
-            </a>
-            <p>Teacher</p>
-            <ul class="list-inline">
-              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
-              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
-              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
-              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- teacher -->
-      <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-        <div class="card border-0 rounded-0 hover-shadow">
-          <img class="card-img-top rounded-0" src="images/teachers/teacher-2.jpg" alt="teacher">
-          <div class="card-body">
-            <a href="teacher-single.html">
-              <h4 class="card-title">Clark Malik</h4>
-            </a>
-            <p>Teacher</p>
-            <ul class="list-inline">
-              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
-              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
-              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
-              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- teacher -->
-      <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-        <div class="card border-0 rounded-0 hover-shadow">
-          <img class="card-img-top rounded-0" src="images/teachers/teacher-3.jpg" alt="teacher">
-          <div class="card-body">
-            <a href="teacher-single.html">
-              <h4 class="card-title">John Doe</h4>
-            </a>
-            <p>Teacher</p>
-            <ul class="list-inline">
-              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-facebook"></i></a></li>
-              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
-              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-google"></i></a></li>
-              <li class="list-inline-item"><a class="text-color" href="#"><i class="ti-linkedin"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+
 <!-- /teachers -->
 
 <!-- blog -->
-<section class="section pt-0">
+{{-- <section class="section pt-0">
   <div class="container">
     <div class="row">
       <div class="col-12">
@@ -667,7 +442,7 @@
   </article>
 </div>
   </div>
-</section>
+</section> --}}
 <!-- /blog -->
 
 <!-- footer -->
@@ -677,12 +452,19 @@
     <div class="container">
       <div class="row">
         <div class="col-md-9 ml-auto bg-primary py-5 newsletter-block">
-          <h3 class="text-white">Subscribe Now</h3>
-          <form action="#">
-            <div class="input-wrapper">
-              <input type="email" class="form-control border-0" id="newsletter" name="newsletter" placeholder="Enter Your Email...">
-              <button type="submit" value="send" class="btn btn-primary">Join</button>
+          <h3 class="text-white">Comment</h3>
+          <form action="#" class="row">
+            <div class="col-sm-6">
+              <input type="text" class="form-control mb-4" id="name" name="name" placeholder="Full Name">
             </div>
+            <div class="col-sm-6">
+              <input type="email" class="form-control mb-4" id="mail" name="mail" placeholder="Email Address">
+            </div>
+            <div class="col-12">
+              <textarea name="comment" id="comment" class="form-control mb-4" placeholder="Comment Here..."></textarea>
+              <button type="submit" value="send" class="btn ">post comment</button>
+            </div>
+            
           </form>
         </div>
       </div>
