@@ -11,7 +11,6 @@
 
   <!-- ** Plugins Needed for the Project ** -->
   <!-- Bootstrap -->
-  
   <link rel="stylesheet" href="{{ asset('/themes/educenter/plugins/bootstrap/bootstrap.min.css')}}">
   <!-- slick slider -->
   <link rel="stylesheet" href="{{ asset('/themes/educenter/plugins/slick/slick.css')}}">
@@ -36,7 +35,7 @@
 <body>
   <!-- preloader start -->
   {{-- <div class="preloader">
-    <img src="{{ asset('/themes/educenter/images/preloader.gif')}}" alt="preloader">
+    <img src="images/preloader.gif" alt="preloader">
   </div> --}}
   <!-- preloader end -->
 
@@ -47,7 +46,7 @@
     <div class="container">
       <div class="row no-gutters">
         <div class="col-lg-4 text-center text-lg-left">
-          <a class="text-color mr-3" href="callto:+443003030266"><strong>CALL</strong> +62 898997</a>
+          <a class="text-color mr-3" href="callto:+443003030266"><strong>CALL</strong> +44 300 303 0266</a>
           <ul class="list-inline d-inline">
             <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-facebook"></i></a></li>
             <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
@@ -79,15 +78,15 @@
 
         <div class="collapse navbar-collapse" id="navigation">
           <ul class="navbar-nav ml-auto text-center">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home</a>
+            <li class="nav-item @@home">
+              <a class="nav-link" href="/">Home</a>
             </li>
             <li class="nav-item @@about">
-              <a class="nav-link" href="about.html">News</a>
+              <a class="nav-link" href="about.html">About</a>
             </li>
-            {{-- <li class="nav-item @@courses">
+            <li class="nav-item @@courses">
               <a class="nav-link" href="courses.html">COURSES</a>
-            </li> --}}
+            </li>
             <li class="nav-item @@events">
               <a class="nav-link" href="events.html">EVENTS</a>
             </li>
@@ -185,265 +184,128 @@
     </div>
 </div>
 
-<!-- hero slider -->
-<section class="hero-section overlay bg-cover" data-background="images/banner/banner-1.jpg">
+<!-- page title -->
+<section class="page-title-section overlay" data-background="images/backgrounds/page-title.jpg">
   <div class="container">
-    <div class="hero-slider">
-      <!-- slider item -->
-      <div class="hero-slider-item">
-        <div class="row">
-          <div class="col-md-8">
-            <h1 class="text-white" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".1">Your bright future is our mission</h1>
-            <p class="text-muted mb-4" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor
-              incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer</p>
-            <a href="contact.html" class="btn btn-primary" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".7">Apply now</a>
-          </div>
-        </div>
-      </div>
-      <!-- slider item -->
-      <div class="hero-slider-item">
-        <div class="row">
-          <div class="col-md-8">
-            <h1 class="text-white" data-animation-out="fadeOutUp" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".1">Your bright future is our mission</h1>
-            <p class="text-muted mb-4" data-animation-out="fadeOutUp" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor
-              incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer</p>
-            <a href="contact.html" class="btn btn-primary" data-animation-out="fadeOutUp" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".7">Apply now</a>
-          </div>
-        </div>
-      </div>
-      <!-- slider item -->
-      <div class="hero-slider-item">
-        <div class="row">
-          <div class="col-md-8">
-            <h1 class="text-white" data-animation-out="fadeOutDown" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".1">Your bright future is our mission</h1>
-            <p class="text-muted mb-4" data-animation-out="fadeOutDown" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor
-              incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer</p>
-            <a href="contact.html" class="btn btn-primary" data-animation-out="fadeOutDown" data-delay-out="5" data-duration-in=".3" data-animation-in="zoomIn" data-delay-in=".7">Apply now</a>
-          </div>
-        </div>
+    <div class="row">
+      <div class="col-md-8">
+        <ul class="list-inline custom-breadcrumb">
+          <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="blog.html">Our Blog</a></li>
+          <li class="list-inline-item text-white h3 font-secondary nasted">Blog Details</li>
+        </ul>
+        <p class="text-lighten">Our courses offer a good compromise between the continuous assessment favoured by some universities and the emphasis placed on final exams by others.</p>
       </div>
     </div>
   </div>
 </section>
-<!-- /hero slider -->
+<!-- /page title -->
 
-<!-- banner-feature -->
-{{-- <section class="bg-gray overflow-md-hidden">
-  <div class="container-fluid p-0">
-    <div class="row no-gutters">
-      <div class="col-xl-4 col-lg-5 align-self-end">
-        <img class="img-fluid w-100" style="margin-top:-100px;" src="https://asset.kompas.com/data/photo/2021/02/18/602e45d79c327.jpg" alt="banner-feature">
-      </div>
-      <div class="col-xl-8 col-lg-7">
-        <div class="row feature-blocks bg-gray justify-content-between">
-          <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
-            <i class="ti-book mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
-            <h3 class="mb-xl-4 mb-lg-3 mb-4">Scholorship News</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-              et dolore magna aliqua. Ut enim ad</p>
-          </div>
-          <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
-            <i class="ti-blackboard mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
-            <h3 class="mb-xl-4 mb-lg-3 mb-4">Our Notice Board</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-              et dolore magna aliqua. Ut enim ad</p>
-          </div>
-          <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
-            <i class="ti-agenda mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
-            <h3 class="mb-xl-4 mb-lg-3 mb-4">Our Achievements</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-              et dolore magna aliqua. Ut enim ad</p>
-          </div>
-          <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
-            <i class="ti-write mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
-            <h3 class="mb-xl-4 mb-lg-3 mb-4">Admission Now</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-              et dolore magna aliqua. Ut enim ad</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> --}}
-<!-- /banner-feature -->
-
-<!-- about us -->
-<section class="section">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-6 order-2 order-md-1">
-        <h3 class="section-title">Salah,Vaksin nusantara mampu hancurkan semua jenis virus Corona dengan Efikasi 100%</h3>
-        <p>
-          Tangkapan layar pesan berantai di aplikasi WhatsApp berisi klaim bahwa vaksin Nusantara ampuh 100 persen hancurkan semua jenis virus Corona, beredar di Facebook, pada 6 September 2021. 
-        </p>
-        <p>
-          Dalam tangkapan layar itu, pesan yang tertulis, memuat informasi yang diklaim berasal dari mantan Menkes Siti Fadilah Supari dengan isi: “Vaksin Nusantara dengan teknologi dendritik diklaim ampuh 100 persen hancurkan semua jenis virus Corona (alpha, beta, delta, delta plus, lambda & jenis virus lainnya).
-        </p>
-        <p>
-          Isi pesan berikutnya memuat klaim bahwa tingkat efikasi dan efektivitas sebesar 100 persen, serta diklaim aman bagi yang memiliki penyakit penyerta (komorbid), anak dan ibu hamil. 
-        </p>
-        {{-- <a href="about.html" class="btn btn-primary-outline">Learn more</a> --}}
-      </div>
-      <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
-        <img class="img-fluid w-100" src="https://cdn.tmpo.co/data/2021/09/13/id_1050561/1050561_720.jpg" alt="about image">
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /about us -->
-
-
-<!-- /courses -->
-
-<!-- cta -->
-{{-- <section class="section bg-primary">
+<!-- blog details -->
+<section class="section-sm bg-gray">
   <div class="container">
     <div class="row">
-      <div class="col-12 text-center">
-        <h6 class="text-white font-secondary mb-0">Click to Join the Advance Workshop</h6>
-        <h2 class="section-title text-white">Training In Advannce Networking</h2>
-        <a href="contact.html" class="btn btn-secondary">join now</a>
+      <div class="col-12 mb-4">
+        <img src="https://covesia.com/wp-content/uploads/VAKSIN-NUSANTARA-ILS.jpg" alt="blog-thumb" class="img-fluid w-100">
       </div>
-    </div>
-  </div>
-</section> --}}
-<!-- /cta -->
+      <div class="col-12">
+        <ul class="list-inline">
+          <li class="list-inline-item mr-4 mb-3 mb-md-0 text-light"><span class="font-weight-bold mr-2">Post:</span>Somrat</li>
+          <li class="list-inline-item mr-4 mb-3 mb-md-0 text-light">August 28, 2017</li>
+          <li class="list-inline-item mr-4 mb-3 mb-md-0 text-light"><i class="ti-book mr-2"></i>Read 289</li>
+          <li class="list-inline-item mr-4 mb-3 mb-md-0 text-light"><i class="ti-share mr-2"></i>289</li>
+          <li class="list-inline-item mr-4 mb-3 mb-md-0 text-light"><a class="text-light" href="#"><i class="ti-comments mr-2"></i>265</a></li>
+        </ul>
+      </div>
+      <!-- border -->
+      <div class="col-12 mt-4">
+        <div class="border-bottom border-primary"></div>
+      </div>
+      <!-- blog contect -->
+      <div class="col-12 mb-5">
+        <h2>Salah,Vaksin nusantara mampu hancurkan semua jenis virus Corona dengan Efikasi 100% </h2>
+        <p>Tangkapan layar pesan berantai di aplikasi WhatsApp berisi klaim bahwa vaksin Nusantara ampuh 100 persen hancurkan semua jenis virus Corona, beredar di Facebook, pada 6 September 2021. 
 
-<!-- success story -->
-<section class="section bg-primary" data-background="images/backgrounds/success-story.jpg">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-6 col-sm-4  success-video">
-        <img class="img-fluid " style="height: 450px;width:1000px;" src="https://disk.mediaindonesia.com/thumbs/1800x1200/news/2021/02/d2d552aef0aa67c104ae96d41b3d8efa.jpg" alt="about image">
-      </div>
-      <div class="col-lg-6 col-sm-8">
-        <div class="bg-white p-5">
-          <h3 class="section-title">Pemeriksaan Fakta</h3>
-          <p>Hasil verifikasi Tempo kepada sejumlah ahli, menunjukkan, bahwa klaim tersebut tidak memiliki basis ilmiah sesuai prosedur pembuatan vaksin. </p>
-          <p>
+            Dalam tangkapan layar itu, pesan yang tertulis, memuat informasi yang diklaim berasal dari mantan Menkes Siti Fadilah Supari dengan isi: “Vaksin Nusantara dengan teknologi dendritik diklaim ampuh 100 persen hancurkan semua jenis virus Corona (alpha, beta, delta, delta plus, lambda & jenis virus lainnya).
+            
+            Isi pesan berikutnya memuat klaim bahwa tingkat efikasi dan efektivitas sebesar 100 persen, serta diklaim aman bagi yang memiliki penyakit penyerta (komorbid), anak dan ibu hamil. 
+            </p>
+        <h3>Pemeriksaan Fakta</h3>
+        <p>Hasil verifikasi Tempo kepada sejumlah ahli, menunjukkan, bahwa klaim tersebut tidak memiliki basis ilmiah sesuai prosedur pembuatan vaksin. 
+
             Menurut ahli Biologi Molekuler Ahmad Utomo, vaksin Nusantara belum melakukan uji klinis tahap 3. Sehingga klaim bahwa vaksin Nusantara dapat ampuh hancurkan semua jenis virus Corona dengan efikasi dan efektivitas 100 persen tidak memiliki rujukan data ilmiah. 
-          </p>
-          <p>
+            
             “Itu omong kosong karena sama sekali tidak ada bukti uji klinis tahap 3,” kata dia kepada Tempo, Senin 13 September 2021.
             Ketua Komisi Nasional Kejadian Ikutan Pasca Imunisasi (Komnas KIPI) Prof Hindra Irawan Satari, juga menjelaskan bahwa uji klinis vaksin Nusantara hanya pada tahap 1 yang hanya menjangkau puluhan orang. Vaksin tersebut belum sampai pada uji klinis fase 2 yang melibatkan seratus orang dan fase 3 terhadap ribuan orang.
+            </p>
+        <p>“Jadi terlalu dini klaim tersebut,” kata dia.
+            Hindra juga mengingatkan, hasil uji klinis setiap fase harus dipublikasikan di jurnal terpandang. Hingga saat ini dia belum mengetahui publikasi atas klaim bahwa vaksin Nusantara ampun 100 persen melawan semua virus Corona, dan aman bagi mereka yang memiliki komorbid, anak dan ibu hamil.
+             </p>
 
-          </p>
-        </div>
+             <h3>Tahap Pembuatan Vaksin</h3>
+             <p>
+                Pengembangan vaksin baru membutuhkan sejumlah tahapan kesepakatan internasional. Dikutip dari Pusat Pencegahan dan Penanganan Penyakit Amerika Serikat, CDC, tahapan pengembangan vaksin baru adalah tahap eksplorasi, tahap pra-klinis, perkembangan klinis, peninjauan dan persetujuan peraturan, manufaktur dan kontrol kualitas.
+
+                Dalam tahapan klinis atau uji coba pada manusia memuat sejumlah fase. Selama Fase I, sekelompok kecil orang menerima vaksin percobaan. Pada Fase II, studi klinis diperluas dan vaksin diberikan kepada orang-orang yang memiliki karakteristik (seperti usia dan kesehatan fisik) yang serupa dengan mereka yang menjadi sasaran vaksin baru tersebut. 
+                
+                Pada Fase III, vaksin diberikan kepada ribuan orang dan diuji kemanjuran dan keamanannya. Banyak vaksin menjalani studi formal Fase IV yang sedang berlangsung setelah vaksin disetujui dan dilisensikan.
+                
+             </p>
+             <h4>Kesimpulan</h4>
+             <p>
+                Dari pemeriksaan fakta di atas, klaim bahwa vaksin Nusantara ampuh hancurkan semua jenis virus Corona dengan efektivitas dan efikasi 100 persen adalah keliru. Vaksin Nusantara belum menjalani uji klinis tahap 3 yang dilakukan terhadap ribuan orang untuk mengetahui tingkat keamanan dan efikasi.
+                Sel dendritik yang menjadi basis vaksin Nusantara bersifat autologus artinya dari materi yang digunakan dari diri kita sendiri dan untuk diri kita sendiri, sehingga tidak bisa digunakan untuk orang lain.
+                
+             </p>
+      </div>
+      <!-- comment box -->
+      <div class="col-12">
+        <form action="#" class="row">
+          <div class="col-sm-6">
+            <input type="text" class="form-control mb-4" id="name" name="name" placeholder="Full Name">
+          </div>
+          <div class="col-sm-6">
+            <input type="email" class="form-control mb-4" id="mail" name="mail" placeholder="Email Address">
+          </div>
+          <div class="col-12">
+            <textarea name="comment" id="comment" class="form-control mb-4" placeholder="Comment Here..."></textarea>
+          </div>
+          <div class="col-12">
+            <button type="submit" value="send" class="btn btn-primary">post comment</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
 </section>
-<!-- /success story -->
+<!-- /blog details -->
 
-<!-- events -->
-<section class="section bg-gray">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-6 order-2 order-md-1">
-        <h3 class="section-title">Kesimpulan</h3>
-        <p>
-          Dari pemeriksaan fakta di atas, klaim bahwa vaksin Nusantara ampuh hancurkan semua jenis virus Corona dengan efektivitas dan efikasi 100 persen adalah keliru. Vaksin Nusantara belum menjalani uji klinis tahap 3 yang dilakukan terhadap ribuan orang untuk mengetahui tingkat keamanan dan efikasi. 
-        </p>
-        <p>
-          Sel dendritik yang menjadi basis vaksin Nusantara bersifat autologus artinya dari materi yang digunakan dari diri kita sendiri dan untuk diri kita sendiri, sehingga tidak bisa digunakan untuk orang lain.
-        </p>
-        {{-- <a href="about.html" class="btn btn-primary-outline">Learn more</a> --}}
-      </div>
-      <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
-        <img class="img-fluid w-100" src="https://www.lensaindonesia.com/wp-content/uploads/2021/08/vaksin-nusantara.jpg" alt="about image">
-      </div>
-    </div>
-  </div>
-</div>
-    <!-- mobile see all button -->
-    
-  </div>
-</section>
-<!-- /events -->
-
-<!-- teachers -->
-
-<!-- /teachers -->
-
-<!-- blog -->
-{{-- <section class="section pt-0">
+<!-- recommended post -->
+<section class="section">
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <h2 class="section-title">Latest News</h2>
+        <h2 class="section-title">ALL Comment</h2>
       </div>
     </div>
     <div class="row justify-content-center">
   <!-- blog post -->
   <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
     <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
-      <img class="card-img-top rounded-0" src="images/blog/post-1.jpg" alt="Post thumb">
       <div class="card-body">
         <!-- post meta -->
-        <ul class="list-inline mb-3">
-          <!-- post date -->
-          <li class="list-inline-item mr-3 ml-0">August 28, 2018</li>
+        <div class="list-inline mb-3">
           <!-- author -->
-          <li class="list-inline-item mr-3 ml-0">By Somrat Sorkar</li>
-        </ul>
-        <a href="blog-single.html">
-          <h4 class="card-title">Lorem ipsum dolor amet, adipisicing eiusmod tempor.</h4>
-        </a>
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicin</p>
-        <a href="blog-single.html" class="btn btn-primary btn-sm">read more</a>
+          <h4 class="list-inline-item mr-3 ml-0">Rusman Jainudi</h4>
       </div>
-    </div>
-  </article>
-  <!-- blog post -->
-  <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-    <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
-      <img class="card-img-top rounded-0" src="images/blog/post-2.jpg" alt="Post thumb">
-      <div class="card-body">
-        <!-- post meta -->
-        <ul class="list-inline mb-3">
-          <!-- post date -->
-          <li class="list-inline-item mr-3 ml-0">August 13, 2018</li>
-          <!-- author -->
-          <li class="list-inline-item mr-3 ml-0">By Jonathon Drew</li>
-        </ul>
-        <a href="blog-single.html">
-          <h4 class="card-title">Lorem ipsum dolor amet, adipisicing eiusmod tempor.</h4>
-        </a>
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicin</p>
-        <a href="blog-single.html" class="btn btn-primary btn-sm">read more</a>
-      </div>
-    </div>
-  </article>
-  <!-- blog post -->
-  <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
-    <div class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
-      <img class="card-img-top rounded-0" src="images/blog/post-3.jpg" alt="Post thumb">
-      <div class="card-body">
-        <!-- post meta -->
-        <ul class="list-inline mb-3">
-          <!-- post date -->
-          <li class="list-inline-item mr-3 ml-0">August 24, 2018</li>
-          <!-- author -->
-          <li class="list-inline-item mr-3 ml-0">By Alex Pitt</li>
-        </ul>
-        <a href="blog-single.html">
-          <h4 class="card-title">Lorem ipsum dolor amet, adipisicing eiusmod tempor.</h4>
-        </a>
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicin</p>
-        <a href="blog-single.html" class="btn btn-primary btn-sm">read more</a>
+        <p class="card-text">Terimakasih sudah membuatkan berita</p>
+        <p>By rusman@gmail.com</p>
       </div>
     </div>
   </article>
 </div>
   </div>
-</section> --}}
-<!-- /blog -->
+</section>
+<!-- /recommended post -->
 
 <!-- footer -->
 <footer>
@@ -452,19 +314,12 @@
     <div class="container">
       <div class="row">
         <div class="col-md-9 ml-auto bg-primary py-5 newsletter-block">
-          <h3 class="text-white">Comment</h3>
-          <form action="#" class="row">
-            <div class="col-sm-6">
-              <input type="text" class="form-control mb-4" id="name" name="name" placeholder="Full Name">
+          <h3 class="text-white">Subscribe Now</h3>
+          <form action="#">
+            <div class="input-wrapper">
+              <input type="email" class="form-control border-0" id="newsletter" name="newsletter" placeholder="Enter Your Email...">
+              <button type="submit" value="send" class="btn btn-primary">Join</button>
             </div>
-            <div class="col-sm-6">
-              <input type="email" class="form-control mb-4" id="mail" name="mail" placeholder="Email Address">
-            </div>
-            <div class="col-12">
-              <textarea name="comment" id="comment" class="form-control mb-4" placeholder="Comment Here..."></textarea>
-              <button type="submit" value="send" class="btn ">post comment</button>
-            </div>
-            
           </form>
         </div>
       </div>

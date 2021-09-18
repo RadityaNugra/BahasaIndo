@@ -14,3 +14,7 @@ use App\Http\Controllers\viewController;
 */
 
 Route::get('/',[viewController::class,'index']);
+
+Route::get('/news',[viewController::class,'news']);
+
+Route::get('/blog',[viewController::class,'blog']);
